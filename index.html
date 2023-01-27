@@ -83,6 +83,7 @@
                       id=""
                       placeholder="0000 0000 0000 0000"
                       class="form-input"
+                      maxlength="16"
                       required />
                   </div>
                   <i class="fa-solid fa-credit-card card-icon"></i>
@@ -95,12 +96,17 @@
                       type="number"
                       placeholder="MM/YY"
                       id="valid"
+                      maxlength="4"
                       required />
                   </div>
                   <div class="cvv-flex left-border">
                     <div>
                       <label for="cvv" class="label">CVV</label>
-                      <input type="number" placeholder="123" required />
+                      <input
+                        type="number"
+                        placeholder="123"
+                        maxlength="3"
+                        required />
                     </div>
                     <span>What is this?</span>
                   </div>
