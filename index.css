@@ -10,7 +10,9 @@ body {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
+  display: grid;
+  place-items: center;
 }
 
 .section-center {
