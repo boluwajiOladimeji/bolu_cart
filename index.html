@@ -64,42 +64,57 @@
 
         <div class="modal-container">
           <div class="modal">
-            <button class="close-modal-btn">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <h3 class="modal-title">enter card details</h3>
-            <form action="" class="form">
-              <div class="form-control">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Enter your userName"
-                  class="form-input name-input"
-                  required />
-              </div>
-              <div class="form-control">
-                <input
-                  type="number"
-                  name=""
-                  id=""
-                  placeholder="Enter Card Number"
-                  class="form-input"
-                  required />
-              </div>
-              <div class="form-control">
-                <input
-                  type="number"
-                  name=""
-                  id=""
-                  placeholder="Enter CVV"
-                  class="form-input"
-                  required />
-              </div>
-              <div class="form-control">
-                <button type="submit" class="form-btn">Pay</button>
-              </div>
-            </form>
+            <div class="img-container">
+              <img src="./images/user-avatar.png" alt="" class="avatar" />
+              <button class="close-modal-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="card">
+              <h3 class="modal-price">$<span class="price-value"></span></h3>
+              <h6 class="modal-email">standarduser@example.com</h6>
+              <form action="" class="form">
+                <div class="form-control">
+                  <div class="card-details">
+                    <label for="card-number" class="label">card-number</label>
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      placeholder="0000 0000 0000 0000"
+                      class="form-input"
+                      required />
+                  </div>
+                  <i class="fa-solid fa-credit-card card-icon"></i>
+                </div>
+
+                <div class="card-details form-control">
+                  <div>
+                    <label for="valid" class="label">VALID TILL</label>
+                    <input
+                      type="number"
+                      placeholder="MM/YY"
+                      id="valid"
+                      required />
+                  </div>
+                  <div class="cvv-flex left-border">
+                    <div>
+                      <label for="cvv" class="label">CVV</label>
+                      <input type="number" placeholder="123" required />
+                    </div>
+                    <span>What is this?</span>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox" required />
+                  <label for="checkbox">Remember this card next time</label>
+                </div>
+
+                <div class="btn-control">
+                  <button type="submit" class="form-btn">Pay $12</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

@@ -105,34 +105,53 @@ function alert(text, outcome) {
 
 function checkTotal() {
   let total = 0;
+
   cart.forEach(function (meal) {
     total += meal.price;
   });
   totalEl.textContent = `$${total}`;
+  return total;
 }
+
+// function getTotalPrice() {
+//   let totalPrice = checkTotal()
+// }
 
 // Modal
 const orderbtn = document.querySelector('.complete-order-btn');
 const modal = document.querySelector('.modal-container');
 const closeModalBtn = document.querySelector('.close-modal-btn');
+const form = document.querySelector('.form');
 const formBtn = document.querySelector('.form-btn');
-const nameValue = document.querySelector('.name-input');
-let name;
+
+const modalEl = document.querySelector('.modal');
+const priceValue = document.querySelector('.price-value');
 
 orderbtn.addEventListener('click', function () {
   modal.classList.add('show-modal');
+  let totalPrice = checkTotal();
+  priceValue.textContent = `${totalPrice}.00`;
+  formBtn.textContent = `Pay ${totalPrice}.00`;
 });
 
 closeModalBtn.addEventListener('click', function () {
   modal.classList.remove('show-modal');
 });
 
-formBtn.addEventListener('click', function (e) {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
-  //   console.log(nameValue.value);
-  name = nameValue.value;
-  modal.classList.remove('show-modal');
-  orderContainer.innerHTML = `<p class="notification">Thanks ${name}!, your order is on its way</p>`;
-  alert('Order Successful', 'success');
-  window.location.reload();
+  console.log('clicked');
+  let totalPrice = checkTotal();
+  checkTotal();
+  modalEl.innerHTML = `<div class="success">
+  <div>
+  <i class="fa-regular fa-circle-check order-success"></i>
+  <p class="success-text">You paid $${totalPrice}.00 to Bolu's dinner</p>
+  </div>
+</div>`;
+
+  setTimeout(function () {
+    alert('Order Successful', 'success');
+    window.location.reload();
+  }, 3000);
 });

@@ -220,9 +220,7 @@ header {
   background: #fff;
   width: 80%;
   max-width: 520px;
-  height: 520px;
-
-  padding: 3rem 2rem;
+  /* height: 520px; */
   box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
   -webkit-box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
   -moz-box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
@@ -242,14 +240,20 @@ input {
   width: 100%;
   display: inline-block;
   padding: 1em;
-  border-radius: 0.25rem;
-  border: 1px solid;
+  font-size: 1.5rem;
+  /* border-radius: 0.25rem; */
+  border: none;
+  outline: none;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
 }
 
 .form-btn {
@@ -260,4 +264,132 @@ input::-webkit-inner-spin-button {
   font-size: 2rem;
   color: #065f46;
   background: #ecfdf5;
+}
+
+/* Modal */
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 1px solid black; */
+  /* background: blue; */
+  padding: 0.5rem;
+}
+
+.img-container {
+  display: flex;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.card {
+  background: #fff6e6;
+  /* opacity: 0.5; */
+  padding: 1rem 2rem;
+}
+
+.modal-price {
+  font-size: 2rem;
+}
+
+.price-value {
+  font-size: 3rem;
+}
+
+.modal-email {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.form-control {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #fff;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+  border: 0.1rem solid #3c3c3c;
+  /* align-items: center; */
+}
+
+.card-details {
+  flex-grow: 1;
+}
+
+.card-icon {
+  margin-top: 0;
+  font-size: 2rem;
+  padding-right: 2rem;
+  align-self: center;
+}
+
+.cvv-flex {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.cvv-flex span {
+  padding-right: 2rem;
+  flex-basis: 70%;
+}
+
+.btn-control {
+  margin-top: 2rem;
+}
+
+.left-border {
+  border-left: 1px solid #3c3c3c;
+}
+
+.checkbox {
+  display: flex;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.checkbox label {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.checkbox input {
+  width: 20px;
+  display: inline-block;
+  padding: 1em;
+  font-size: 1.5rem;
+  /* border-radius: 0.25rem; */
+  border: none;
+  outline: none;
+}
+
+.form-btn {
+  background: #cc8400;
+  font-size: 2rem;
+}
+
+.success {
+  height: 300px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.order-success {
+  font-size: 5rem;
+  color: green;
+  margin-bottom: 1.5rem;
+}
+
+.success-text {
+  font-size: 2rem;
 }
