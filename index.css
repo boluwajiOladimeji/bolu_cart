@@ -390,6 +390,11 @@ input::placeholder {
   margin-bottom: 1.5rem;
 }
 
-.success-text {
+.successful-pay {
   font-size: 2rem;
+}
+
+.success-text {
+  font-size: 1.5rem;
+  color: #3c3c3c;
 }

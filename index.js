@@ -146,6 +146,7 @@ form.addEventListener('submit', function (e) {
   modalEl.innerHTML = `<div class="success">
   <div>
   <i class="fa-regular fa-circle-check order-success"></i>
+  <p class="successful-pay">Payment Successful</p>
   <p class="success-text">You paid $${totalPrice}.00 to Bolu's dinner</p>
   </div>
 </div>`;
