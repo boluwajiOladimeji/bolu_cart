@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Smythe', cursive;
+  background: #f5f5f5;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  color: #fff;
+  padding: 3rem 3rem;
+  background: url('./images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+}
+
+.header-title {
+  font-weight: 400;
+  font-size: 39px;
+  text-transform: capitalize;
+}
+
+.header-text {
+  font-weight: 400;
+  font-size: 22.4216px;
+}
+
+.main {
+  background: #fff;
+  padding: 1rem 3rem;
+  min-height: 800px;
+}
+
+.alert {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  /* background: blue; */
+  border-bottom: 1px solid #d2d2d2;
+  padding: 3rem 0;
+}
+
+.meal-emoji {
+  font-size: 4.9rem;
+}
+
+.meal-name {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.meal-recipe {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #8b8b8b;
+}
+
+.meal-price {
+  font-size: 20px;
+}
+
+.add-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background: none;
+  margin-left: auto;
+  border: 1px solid #dedede;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+/* Orders */
+
+.order {
+  margin-top: 4rem;
+  transition: all 0.3s linear;
+  display: none;
+}
+
+.show-order {
+  display: block;
+}
+
+.order-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.meal-orders {
+  border-bottom: 1px solid #111;
+  padding: 1rem 0;
+}
+
+.meal-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 0;
+}
+
+.meal-order-name {
+  font-size: 28px;
+}
+
+.remove-cart {
+  background: none;
+  border: none;
+  color: #bbbbbb;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bolder;
+  display: block;
+}
+
+.meal-order-price,
+.total {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.meal-total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.complete-order {
+  margin-bottom: 2rem;
+}
+
+.complete-order-btn,
+.form-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #16db99;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* modal */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  z-index: -5;
+  visibility: hidden;
+}
+
+.show-modal {
+  z-index: 999;
+  visibility: visible;
+}
+
+.close-modal-btn {
+  display: block;
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-size: 30px;
+  text-align: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.close-modal-btn:hover {
+  opacity: 0.5;
+  color: red;
+}
+
+.modal {
+  background: #fff;
+  width: 80%;
+  max-width: 520px;
+  height: 520px;
+
+  padding: 3rem 2rem;
+  box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
+  -webkit-box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
+  -moz-box-shadow: 5px 5px 77px 57px rgba(227, 227, 227, 0.75);
+}
+
+.modal-title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 0.25rem;
+  border: 1px solid;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-btn {
+  font-size: 20px;
+}
+
+.notification {
+  font-size: 2rem;
+  color: #065f46;
+  background: #ecfdf5;
+}
