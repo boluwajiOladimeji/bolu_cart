@@ -141,7 +141,12 @@ header {
   font-size: 28px;
 }
 
-.remove-cart {
+.amount {
+  font-size: 1.5rem;
+}
+
+.remove-cart,
+.incart {
   background: none;
   border: none;
   color: #bbbbbb;
