@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Smythe', cursive;
+  font-family: 'Montserrat', sans-serif;
   background: #f5f5f5;
 }
 
@@ -335,12 +335,12 @@ input::placeholder {
 
 .cvv-flex {
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 80%;
 }
 
 .cvv-flex span {
   padding-right: 2rem;
-  flex-basis: 70%;
+  flex-basis: 90%;
 }
 
 .btn-control {

@@ -22,7 +22,11 @@ function addToCart() {
       for (let meal of menuArray) {
         if (e.currentTarget.dataset.meal === meal.name) {
           if (cart.includes(meal)) {
-            alert('item already in cart', 'danger');
+            // alert('item already in cart', 'danger');
+            meal.amount += 1;
+            cart.pop(meal);
+            cart.push(meal);
+            renderOrder();
           } else {
             cart.push(meal);
             renderOrder();
@@ -39,6 +43,12 @@ function removeFromCart() {
   orderContainer.addEventListener('click', function (e) {
     for (let meal of cart) {
       if (e.target.dataset.meal === meal.name) {
+        if (meal.amount > 1) {
+          meal.amount--;
+          renderOrder();
+          return;
+        }
+
         cart.pop(meal);
 
         if (cart.length === 0) {
@@ -84,12 +94,16 @@ function renderOrder() {
     .map(function (meal) {
       return `<article class="meal-container">
                 <h3 class="meal-order-name">${meal.name}</h3>
-                <button class="remove-cart" data-meal='${meal.name}'>remove</button>
-                <p class="meal-order-price">$${meal.price}</p>
+                <button class="remove-cart" data-meal='${
+                  meal.name
+                }'>remove</button>
+                <p>(x${meal.amount})</p>
+                <p class="meal-order-price">$${meal.price * meal.amount}</p>
               </article>`;
     })
     .join('');
   orderContainer.classList.add('show-order');
+  console.log(cart);
   checkTotal();
 }
 
@@ -107,7 +121,7 @@ function checkTotal() {
   let total = 0;
 
   cart.forEach(function (meal) {
-    total += meal.price;
+    total += meal.price * meal.amount;
   });
   totalEl.textContent = `$${total}`;
   return total;
