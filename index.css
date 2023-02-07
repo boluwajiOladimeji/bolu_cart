@@ -9,8 +9,14 @@ body {
   background: #f5f5f5;
 }
 
+.section {
+  padding-top: 3rem;
+  display: grid;
+  place-items: center;
+}
+
 .section-center {
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -27,19 +33,19 @@ header {
 
 .header-title {
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 39px;
   text-transform: capitalize;
 }
 
 .header-text {
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 22.4216px;
 }
 
 .main {
   background: #fff;
-  padding: 0.8rem 1.5rem;
-  min-height: 50rem;
+  padding: 1rem 3rem;
+  min-height: 800px;
 }
 
 .alert {
@@ -72,28 +78,28 @@ header {
 }
 
 .meal-name {
-  font-size: 1.75rem;
+  font-size: 28px;
   text-transform: capitalize;
 }
 
 .meal-recipe {
-  font-size: 1rem;
+  font-size: 16px;
   margin-bottom: 8px;
   color: #8b8b8b;
 }
 
 .meal-price {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .add-cart {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-  font-size: 1.25rem;
+  font-size: 20px;
   background: none;
   margin-left: auto;
   border: 1px solid #dedede;
@@ -132,7 +138,7 @@ header {
 }
 
 .meal-order-name {
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 
 .amount {
@@ -144,7 +150,7 @@ header {
   background: none;
   border: none;
   color: #bbbbbb;
-  font-size: 1.125rem;
+  font-size: 18px;
   cursor: pointer;
   font-weight: bolder;
   display: block;
@@ -153,7 +159,7 @@ header {
 .meal-order-price,
 .total {
   margin-left: auto;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .meal-total-price {
@@ -203,7 +209,7 @@ header {
   margin-left: auto;
   background: none;
   border: none;
-  font-size: 1.875rem;
+  font-size: 30px;
   text-align: right;
   margin-bottom: 10px;
   cursor: pointer;
@@ -256,7 +262,7 @@ input::placeholder {
 }
 
 .form-btn {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .notification {

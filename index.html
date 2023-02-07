@@ -26,16 +26,17 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="section-center">
-      <header>
-        <h2 class="header-title">bolu's diner</h2>
-        <h5 class="header-text">The best burgers and pizza is in town</h5>
-      </header>
-      <div class="main">
-        <p class="alert"></p>
-        <div class="menu-container">
-          <!-- single - item -->
-          <!-- <article class="meal">
+    <section class="section">
+      <div class="section-center">
+        <header>
+          <h2 class="header-title">bolu's diner</h2>
+          <h5 class="header-text">The best burgers and pizza is in town</h5>
+        </header>
+        <div class="main">
+          <p class="alert"></p>
+          <div class="menu-container">
+            <!-- single - item -->
+            <!-- <article class="meal">
               <p class="meal-emoji">🍕</p>
               <div class="food-details">
                 <h3 class="meal-name">pizza</h3>
@@ -46,92 +47,93 @@
                 <i class="fa-solid fa-plus"></i>
               </button>
             </article> -->
-          <!-- end of single item -->
-        </div>
+            <!-- end of single item -->
+          </div>
 
-        <div class="order">
-          <h3 class="order-title">Your order</h3>
-          <div class="meal-orders">
-            <!-- single meal -->
-            <!-- <article class="meal-container">
+          <div class="order">
+            <h3 class="order-title">Your order</h3>
+            <div class="meal-orders">
+              <!-- single meal -->
+              <!-- <article class="meal-container">
                 <h3 class="meal-order-name">Pizza</h3>
                 <button class="remove-cart">remove</button>
                 <p class="meal-order-price">$14</p>
               </article> -->
-            <!-- end of single meal -->
-          </div>
-          <div class="meal-total-price">
-            <p class="meal-order-name">Total price:</p>
-            <p class="total">$26</p>
-          </div>
-          <div class="complete-order">
-            <button class="complete-order-btn">Complete order</button>
+              <!-- end of single meal -->
+            </div>
+            <div class="meal-total-price">
+              <p class="meal-order-name">Total price:</p>
+              <p class="total">$26</p>
+            </div>
+            <div class="complete-order">
+              <button class="complete-order-btn">Complete order</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="modal-container">
-        <div class="modal">
-          <div class="img-container">
-            <img src="./images/user-avatar.png" alt="" class="avatar" />
-            <button class="close-modal-btn">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <div class="card">
-            <h3 class="modal-price">$<span class="price-value"></span></h3>
-            <h6 class="modal-email">standarduser@example.com</h6>
-            <form action="" class="form">
-              <div class="form-control">
-                <div class="card-details">
-                  <label for="card-number" class="label">card-number</label>
-                  <input
-                    type="number"
-                    name=""
-                    id="number"
-                    placeholder="0000 0000 0000 0000"
-                    class="form-input"
-                    maxlength="16"
-                    required />
-                </div>
-                <i class="fa-solid fa-credit-card card-icon"></i>
-              </div>
-
-              <div class="card-details form-control">
-                <div>
-                  <label for="valid" class="label">VALID TILL</label>
-                  <input
-                    type="number"
-                    placeholder="MM/YY"
-                    id="valid"
-                    maxlength="4"
-                    required />
-                </div>
-                <div class="cvv-flex left-border">
-                  <div>
-                    <label for="cvv" class="label">CVV</label>
+        <div class="modal-container">
+          <div class="modal">
+            <div class="img-container">
+              <img src="./images/user-avatar.png" alt="" class="avatar" />
+              <button class="close-modal-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="card">
+              <h3 class="modal-price">$<span class="price-value"></span></h3>
+              <h6 class="modal-email">standarduser@example.com</h6>
+              <form action="" class="form">
+                <div class="form-control">
+                  <div class="card-details">
+                    <label for="card-number" class="label">card-number</label>
                     <input
                       type="number"
-                      placeholder="123"
-                      maxlength="3"
+                      name=""
+                      id="number"
+                      placeholder="0000 0000 0000 0000"
+                      class="form-input"
+                      maxlength="16"
                       required />
                   </div>
-                  <span>What is this?</span>
+                  <i class="fa-solid fa-credit-card card-icon"></i>
                 </div>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <label for="checkbox">Remember this card next time</label>
-              </div>
 
-              <div class="btn-control">
-                <button type="submit" class="form-btn">Pay $12</button>
-              </div>
-            </form>
+                <div class="card-details form-control">
+                  <div>
+                    <label for="valid" class="label">VALID TILL</label>
+                    <input
+                      type="number"
+                      placeholder="MM/YY"
+                      id="valid"
+                      maxlength="4"
+                      required />
+                  </div>
+                  <div class="cvv-flex left-border">
+                    <div>
+                      <label for="cvv" class="label">CVV</label>
+                      <input
+                        type="number"
+                        placeholder="123"
+                        maxlength="3"
+                        required />
+                    </div>
+                    <span>What is this?</span>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox">Remember this card next time</label>
+                </div>
+
+                <div class="btn-control">
+                  <button type="submit" class="form-btn">Pay $12</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <script src="index.js" type="module"></script>
   </body>
 </html>
