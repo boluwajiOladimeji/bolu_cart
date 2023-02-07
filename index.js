@@ -165,3 +165,5 @@ form.addEventListener('submit', function (e) {
     window.location.reload();
   }, 3000);
 });
+
+// const inputValue = document.querySelector('#number');
